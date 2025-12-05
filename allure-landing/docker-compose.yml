@@ -7,11 +7,11 @@ services:
       dockerfile: Dockerfile
     container_name: allure-landing-app
     ports:
-      - "4000:5173"
+      - "4000:80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
-      - VIRTUAL_HOST=${DOMAIN:-localhost}
+      - VIRTUAL_HOST=${DOMAIN:-ws-allure.com}
       - VIRTUAL_PORT=5173
     networks:
       - allure-network
