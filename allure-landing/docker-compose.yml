@@ -11,6 +11,8 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=production
+      - VIRTUAL_HOST=${DOMAIN:-localhost}
+      - VIRTUAL_PORT=5173
     networks:
       - allure-network
 
