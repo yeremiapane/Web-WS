@@ -30,14 +30,14 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-heading">Contact</h4>
             <div className="footer-links">
-              <a href="mailto:info@allureindustries.com" className="footer-link">
-                <FaEnvelope /> info@allureindustries.com
+              <a href="mailto:mail@allureindustries.com" className="footer-link">
+                <FaEnvelope /> mail@allureindustries.com
               </a>
-              <a href="tel:+62xxxxxxxxxx" className="footer-link">
-                <FaPhone /> +62 xxx xxxx xxxx
+              <a href="tel:+622145850530" className="footer-link">
+                <FaPhone /> +62 214 585 0530
               </a>
               <div className="footer-link">
-                <FaMapMarkerAlt /> Jakarta, Indonesia
+                <FaMapMarkerAlt /> Cibitung, Indonesia
               </div>
             </div>
           </div>

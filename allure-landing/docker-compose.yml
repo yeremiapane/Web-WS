@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  allure-landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: allure-landing-app
+    ports:
+      - "4000:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - allure-network
+
+networks:
+  allure-network:
+    driver: bridge
