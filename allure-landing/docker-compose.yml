@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: allure-landing-app
     ports:
-      - "4000:80"
+      - "4000:5173"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
